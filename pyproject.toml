@@ -1,0 +1,11 @@
+[project]
+name = "finance-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crawl4ai>=0.5.0.post4",
+    "pandas>=2.2.3",
+    "ruff>=0.9.10",
+]
