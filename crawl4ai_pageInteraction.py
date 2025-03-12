@@ -16,7 +16,7 @@ async def multi_page_commits():
     # Step 1: Load initial commits
     config1 = CrawlerRunConfig(
         wait_for=base_wait,
-        session_id=session_id,
+        session_id=session_id,  # 维持同一个浏览器会话
         cache_mode=CacheMode.BYPASS,
         # Not using js_only yet since it's our first load
     )
