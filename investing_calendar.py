@@ -74,7 +74,7 @@ class InvestingCalendarCrawler:
                     config=config1
                 )
                 print("页面加载完成")
-                print(result.cleaned_html)
+                # print(result.cleaned_html)
 
                 try:
                     # 2. 控制过滤器, 选择国家等其他条件
@@ -133,7 +133,7 @@ class InvestingCalendarCrawler:
                         config=config_filter
                     )
                     print("过滤器加载完成")
-                    print(result_filter.cleaned_html)
+                    # print(result_filter.cleaned_html)
 
                     # 3. 提取本周数据
 
