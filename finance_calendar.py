@@ -4,6 +4,9 @@ from crawl4ai.async_configs import BrowserConfig ,CrawlerRunConfig
 import os
 from pathlib import Path
 
+"""测试crawl4ai使用的demo"""
+
+
 """
 爬取MarketWatch的日历数据
 """
