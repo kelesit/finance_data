@@ -42,6 +42,13 @@ class InvestingCalendarCrawler:
         self.html_content = None
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
+        self.this_week_raw_json = None
+        self.next_week_raw_json = None
+        self.this_week_cleaned_json = None
+        self.next_week_cleaned_json = None
+        self.this_week_md = None
+        self.next_week_md = None
+
     def _get_browser_config(self):
         """获取浏览器配置"""
         return BrowserConfig(
@@ -86,28 +93,29 @@ class InvestingCalendarCrawler:
                         '5', # 美国
                         '72', #欧盟
                         ]
+                    contry_ids_json = json.dumps(country_ids)
                     js_filter = f"""
-                    const selector = document.querySelector('#filterStateAnchor');
+                    var selector = document.querySelector('#filterStateAnchor');
                     if (selector) selector.click();
 
                     setTimeout(() => {{
                     
                         // 先清除默认选中
-                        clearAll('country[]');
+                        document.querySelectorAll('input[id^="country"]').forEach(cb => cb.checked = false);
 
                         // 选择国家
                         const countryCheckboxes = document.querySelectorAll('input[id^="country"]');
                         countryCheckboxes.forEach(cb => {{
                             const id = cb.id.replace('country', '');
-                            if ({json.dumps(country_ids)}.includes(id)) {{
+                            if ({contry_ids_json}.includes(id)) {{
                                 cb.checked = true;
                             }}
                         }});
 
                         // 选择种类
-
+                        // TODO
                         // 选择重要程度
-
+                        // TODO
                         // 点击应用
                         const submit_btn = document.querySelector('#ecSubmitButton');
                         submit_btn.click();
@@ -115,8 +123,36 @@ class InvestingCalendarCrawler:
                     }}, 1000);  //给1秒等待过滤器面板展开
                     """
 
+#                     js_filter = f"""
+# var selector = document.querySelector('#filterStateAnchor');
+# if (selector) selector.click();
+
+# setTimeout(() => {{
+
+#     // 先清除默认选中
+#     document.querySelectorAll('input[id^="country"]').forEach(cb => cb.checked = false);
+
+#     // 选择国家
+#     const countryCheckboxes = document.querySelectorAll('input[id^="country"]');
+#     countryCheckboxes.forEach(cb => {{
+#         const id = cb.id.replace('country', '');
+#         if (["37", "25", "6", "35", "5", "72"].includes(id)) {{
+#             cb.checked = true;
+#         }}
+#     }});
+
+#     // 选择种类
+#     // TODO
+#     // 选择重要程度
+#     // TODO
+#     // 点击应用
+#     const submit_btn = document.querySelector('#ecSubmitButton');
+#     submit_btn.click();
+
+# }}, 1000);  //给1秒等待过滤器面板展开
+# """
                     wait_for_load = """js:() => {
-                        // #filtersWrapper 的displayh属性变为none时，过滤器加载完成
+                        // #filtersWrapper 的display属性变为none时，过滤器加载完成
                         const filterWrapper = document.querySelector('#filtersWrapper');
                         return filterWrapper && filterWrapper.style.display === 'none';
                     }"""
@@ -133,27 +169,109 @@ class InvestingCalendarCrawler:
                         config=config_filter
                     )
                     print("过滤器加载完成")
-                    # print(result_filter.cleaned_html)
+                    #print(result_filter.cleaned_html)
 
-                    # 3. 提取本周数据
+                    try:
+                        # 3. 提取本周数据
+                        js_this_week = json.dumps("""
+                        const thisWeek_Btn = document.querySelector('#timeFrame_thisWeek');
+                        if (thisWeek_Btn) thisWeek_Btn.click();
+                        """, ensure_ascii=False)
 
-                    # 4. 提取下周数据
+                        #economicCalendarData
+                        # wait_for_this_week = """js:() => {
+                        #     const table = document.querySelector('#economicCalendarData');
+                        #     return table && table.rows.length > 1;
+                        # }"""
+                        wait_for_this_week = """js:() => {
+                            const loading = document.querySelector('#economicCalendarLoading');
+                            return loading && loading.style.display === 'none';
+                        }"""
 
+                        config_this_week = CrawlerRunConfig(
+                            session_id=session_id,
+                            js_code=js_this_week,
+                            wait_for=wait_for_this_week,
+                            cache_mode=CacheMode.BYPASS,
+                            js_only=True,
+                        )
+                        result_this_week = await crawler.arun(
+                            url=self.url,
+                            config=config_this_week
+                        )
+                        print("本周数据加载完成")
+                        self.this_week_raw_json = result_this_week.html
+                        self.this_week_cleaned_json = result_this_week.cleaned_html
+                        self.this_week_md = result_this_week.markdown
+                        # 4. 提取下周数据
+                        js_next_week = json.dumps("""
+                        const nextWeek_Btn = document.querySelector('#timeFrame_nextWeek');
+                        if (nextWeek_Btn) nextWeek_Btn.click();
+                        """, ensure_ascii=False)
 
+                        wait_for_next_week = """js:() => {
+                            const loading = document.querySelector('#economicCalendarLoading');
+                            return loading && loading.style.display === 'none';
+                        }"""
+
+                        config_next_week = CrawlerRunConfig(
+                            session_id=session_id,
+                            js_code=js_next_week,
+                            wait_for=wait_for_next_week,
+                            cache_mode=CacheMode.BYPASS,
+                            js_only=True,
+                        )
+                        result_next_week = await crawler.arun(
+                            url=self.url,
+                            config=config_next_week
+                        )
+                        print("下周数据加载完成")
+                        self.next_week_raw_json = result_next_week.html
+                        self.next_week_cleaned_json = result_next_week.cleaned_html
+                        self.next_week_md = result_next_week.markdown
+
+                        print("爬取完成")
+                        return True
+                    except Exception as e:
+                        print(f"数据提取失败: {e}")
+                        return False
+                
                 except Exception as e:
                     print(f"过滤器调整失败: {e}")
                     return False
 
-
-
         except Exception as e:
             print(f"首页加载失败: {e}")
             return False
+        
+    def save_results(self):
+        """保存爬取结果"""
+        if self.this_week_raw_json:
+            with open(self.output_dir / f"this_week_raw_{self.timestamp}.json", "w", encoding="utf-8") as f:
+                f.write(self.this_week_raw_json)
+        if self.next_week_raw_json:
+            with open(self.output_dir / f"next_week_raw_{self.timestamp}.json", "w", encoding="utf-8") as f:
+                f.write(self.next_week_raw_json)
+        if self.this_week_cleaned_json:
+            with open(self.output_dir / f"this_week_cleaned_{self.timestamp}.json", "w", encoding="utf-8") as f:
+                f.write(self.this_week_cleaned_json)
+        if self.next_week_cleaned_json:
+            with open(self.output_dir / f"next_week_cleaned_{self.timestamp}.json", "w", encoding="utf-8") as f:
+                f.write(self.next_week_cleaned_json)
+        if self.this_week_md:
+            with open(self.output_dir / f"this_week_{self.timestamp}.md", "w", encoding="utf-8") as f:
+                f.write(self.this_week_md)
+        if self.next_week_md:
+            with open(self.output_dir / f"next_week_{self.timestamp}.md", "w", encoding="utf-8") as f:
+                f.write(self.next_week_md)
+        print("结果保存成功")
     
 
 async def main():
     crawler = InvestingCalendarCrawler()
     await crawler.run()
+    crawler.save_results()
+
 
 if __name__ == "__main__":
     asyncio.run(main())
