@@ -275,3 +275,15 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+    """
+    待解决的疑问：
+    1. js_filter如果使用json.dumps()转换后运行，会大大延迟，60s左右才能完成，原因是什么？
+    
+    2. 
+    javascript代码执行有问题，crawl4ai官方代码也运行不了。
+    问题所在：
+    /crawl4ai/async_crawler_strategy.py 
+    robust_execute_user_script() 
+    照例来讲不应该有问题，
+    但是在这里会出现问题，原因是什么？"""

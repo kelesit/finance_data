@@ -1,6 +1,10 @@
 import asyncio
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 
+"""
+crawl4ai - Page Interaction Example"""
+
+
 async def multi_page_commits():
     browser_cfg = BrowserConfig(
         headless=False,  # Visible for demonstration
