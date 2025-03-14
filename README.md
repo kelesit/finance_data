@@ -49,12 +49,41 @@
     & "C:\Users\baycheer\AppData\Local\ms-playwright\chromium-1155\chrome-win\chrome.exe" --user-data-dir="D:\work\Study\finance_data\chrome_profile"
     ```
 
+
+### crawl4ai 代码修改
+需要修改一下playright的执行脚本
+不使用f-string直接插入JavaScript代码
+site-packages/crawl4ai/async_crawler_strategy.py文件
+```python
+    async def robust_execute_user_script():
+        ...
+        try:
+            result = await page.evaluate(
+                """
+                (async () => {
+                    try {
+                        // 使用 Function 构造函数包装用户脚本，正确处理 script 变量
+                        const executeScript = () => {
+                            """ + script + """
+                        };
+                        const script_result = executeScript();
+                        return { success: true, result: script_result };
+                    } catch (err) {
+                        return { success: false, error: err.toString(), stack: err.stack };
+                    }
+                })();
+                """
+            )
+```
+
+
+
 ## Usage
 
-目前只有一个爬虫，爬取`https://www.marketwatch.com/economy-politics/calendar`的日历数据。
-
 marketwatch_calendar.py
+[marketwatch](https://www.marketwatch.com/economy-politics/calendar)
 
-[invest](https://www.investing.com/economic-calendar/)网站的数据爬取还在开发中。
+
 investing_calendar.py
-investing_calendar copy.py
+[investing](https://www.investing.com/economic-calendar/)
+(html, markdown数据爬取已完成，未完成解析部份)
