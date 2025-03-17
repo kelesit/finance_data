@@ -42,10 +42,10 @@ class InvestingCalendarCrawler:
         self.html_content = None
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-        self.this_week_raw_json = None
-        self.next_week_raw_json = None
-        self.this_week_cleaned_json = None
-        self.next_week_cleaned_json = None
+        self.this_week_raw_html = None
+        self.next_week_raw_html = None
+        self.this_week_cleaned_html = None
+        self.next_week_cleaned_html = None
         self.this_week_md = None
         self.next_week_md = None
 
@@ -200,8 +200,8 @@ class InvestingCalendarCrawler:
                             config=config_this_week
                         )
                         print("本周数据加载完成")
-                        self.this_week_raw_json = result_this_week.html
-                        self.this_week_cleaned_json = result_this_week.cleaned_html
+                        self.this_week_raw_html = result_this_week.html
+                        self.this_week_cleaned_html = result_this_week.cleaned_html
                         self.this_week_md = result_this_week.markdown
                         # 4. 提取下周数据
                         js_next_week = json.dumps("""
@@ -246,18 +246,18 @@ class InvestingCalendarCrawler:
         
     def save_results(self):
         """保存爬取结果"""
-        if self.this_week_raw_json:
-            with open(self.output_dir / f"this_week_raw_{self.timestamp}.json", "w", encoding="utf-8") as f:
-                f.write(self.this_week_raw_json)
-        if self.next_week_raw_json:
-            with open(self.output_dir / f"next_week_raw_{self.timestamp}.json", "w", encoding="utf-8") as f:
-                f.write(self.next_week_raw_json)
-        if self.this_week_cleaned_json:
-            with open(self.output_dir / f"this_week_cleaned_{self.timestamp}.json", "w", encoding="utf-8") as f:
-                f.write(self.this_week_cleaned_json)
-        if self.next_week_cleaned_json:
-            with open(self.output_dir / f"next_week_cleaned_{self.timestamp}.json", "w", encoding="utf-8") as f:
-                f.write(self.next_week_cleaned_json)
+        if self.this_week_raw_html:
+            with open(self.output_dir / f"this_week_raw_{self.timestamp}.html", "w", encoding="utf-8") as f:
+                f.write(self.this_week_raw_html)
+        if self.next_week_raw_html:
+            with open(self.output_dir / f"next_week_raw_{self.timestamp}.html", "w", encoding="utf-8") as f:
+                f.write(self.next_week_raw_html)
+        if self.this_week_cleaned_html:
+            with open(self.output_dir / f"this_week_cleaned_{self.timestamp}.html", "w", encoding="utf-8") as f:
+                f.write(self.this_week_cleaned_html)
+        if self.next_week_cleaned_html:
+            with open(self.output_dir / f"next_week_cleaned_{self.timestamp}.html", "w", encoding="utf-8") as f:
+                f.write(self.next_week_cleaned_html)
         if self.this_week_md:
             with open(self.output_dir / f"this_week_{self.timestamp}.md", "w", encoding="utf-8") as f:
                 f.write(self.this_week_md)
