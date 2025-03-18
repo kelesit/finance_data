@@ -75,9 +75,35 @@ def extract_html(html_file):
 
     return this_week_df, next_week_df
 
+def extract_economic_calendar(html_content):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    table = soup.find('table', id='economicCalendarData')
+    if not table:
+        print("未找到经济日历数据表格")
+        return None
+    
+    data = []
+    current_date = None
+
+    for row in table.find_all('tr'):
+        if 'theDay' in row.get('class', ''):
+            date_text = row.get_text().strip()
+
+
+    
+
+def extract_html2(html_file):
+    with open(html_file, 'r', encoding='utf-8') as f:
+        html = f.read()
+
+    this_week_df = extract_economic_calendar(html)
+    print(this_week_df)
+    
 
 if __name__ == "__main__":
-    html_file = "finance_calendar.html"
-    this_week_df, next_week_df = extract_html(html_file)
+    # html_file = "finance_calendar.html"
+    html_file = '/Users/hsy/Work/finance_data/output/investing_calendar/this_week_raw_20250318_212015.html'
+    # this_week_df, next_week_df = extract_html(html_file)
+    extract_html2(html_file=html_file)
     print("Done!")
 

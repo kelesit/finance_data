@@ -226,8 +226,8 @@ class InvestingCalendarCrawler:
                             config=config_next_week
                         )
                         print("下周数据加载完成")
-                        self.next_week_raw_json = result_next_week.html
-                        self.next_week_cleaned_json = result_next_week.cleaned_html
+                        self.next_week_raw_html = result_next_week.html
+                        self.next_week_cleaned_html = result_next_week.cleaned_html
                         self.next_week_md = result_next_week.markdown
 
                         print("爬取完成")
