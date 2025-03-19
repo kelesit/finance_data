@@ -173,10 +173,10 @@ class InvestingCalendarCrawler:
 
                     try:
                         # 3. 提取本周数据
-                        js_this_week = json.dumps("""
+                        js_this_week = """
                         const thisWeek_Btn = document.querySelector('#timeFrame_thisWeek');
                         if (thisWeek_Btn) thisWeek_Btn.click();
-                        """, ensure_ascii=False)
+                        """
 
                         #economicCalendarData
                         # wait_for_this_week = """js:() => {
@@ -187,6 +187,10 @@ class InvestingCalendarCrawler:
                             const loading = document.querySelector('#economicCalendarLoading');
                             return loading && loading.style.display === 'none';
                         }"""
+                        # wait_for_this_week = """js:() => {
+                        #     const dayHeaders = document.querySelectorAll('tr[id^="theDay"]');
+                        #     return dayHeaders.length >=5
+                        # }"""
 
                         config_this_week = CrawlerRunConfig(
                             session_id=session_id,
@@ -204,10 +208,10 @@ class InvestingCalendarCrawler:
                         self.this_week_cleaned_html = result_this_week.cleaned_html
                         self.this_week_md = result_this_week.markdown
                         # 4. 提取下周数据
-                        js_next_week = json.dumps("""
+                        js_next_week = """
                         const nextWeek_Btn = document.querySelector('#timeFrame_nextWeek');
                         if (nextWeek_Btn) nextWeek_Btn.click();
-                        """, ensure_ascii=False)
+                        """
 
                         wait_for_next_week = """js:() => {
                             const loading = document.querySelector('#economicCalendarLoading');
