@@ -2,6 +2,8 @@ from pathlib import Path
 from datetime import datetime
 import json
 import asyncio
+import pandas as pd
+from bs4 import BeautifulSoup
 
 from crawl4ai import AsyncWebCrawler
 from crawl4ai.async_configs import BrowserConfig, CrawlerRunConfig, CacheMode
@@ -269,12 +271,103 @@ class InvestingCalendarCrawler:
             with open(self.output_dir / f"next_week_{self.timestamp}.md", "w", encoding="utf-8") as f:
                 f.write(self.next_week_md)
         print("结果保存成功")
-    
+
+    def extract_economic_calendar(self, html_content):
+        soup = BeautifulSoup(html_content, 'html.parser')
+        table = soup.find('table', id='economicCalendarData')
+        if not table:
+            print("未找到经济日历数据表格")
+            return None
+        
+        data = []
+        current_date = None
+
+        for row in table.find_all('tr'):
+            day_td = row.find('td', class_='theDay')
+            if day_td:
+                date_text = row.get_text().strip()
+                try:
+                    current_date = datetime.strptime(date_text, '%A, %B %d, %Y').strftime('%Y-%m-%d')
+                except ValueError:
+                    current_date = date_text
+                continue
+
+            if 'js-event-item' in row.get('class', []):
+                cells = row.find_all('td')
+                if len(cells) < 5:
+                    continue
+
+                time_cell = cells[0].get_text().strip() if len(cells) > 0 else""
+
+                country = cells[1].find('span').get('title')
+                currency = cells[1].get_text().strip()
+                importance = ""
+                bull_icons = cells[2].find_all('i', class_='grayFullBullishIcon')
+                importance = len(bull_icons) if bull_icons else 0
+
+                event = ""
+                event_link = cells[3].find('a')
+                event = event_link.get_text().strip()
+
+                actual = cells[4].get_text().strip()
+                forecast = cells[5].get_text().strip()
+                previous = cells[6].get_text().strip()
+
+                event_data = {
+                    'Date': current_date,
+                    'Time': time_cell,
+                    'Country': country,
+                    'Currency': currency,
+                    'Importance': importance,
+                    'Event': event,
+                    'Event Link': event_link.get('href'),
+                    'Actual': actual,
+                    'Forecast': forecast,
+                    'Previous': previous
+                }
+                data.append(event_data)
+
+        if data:
+            return pd.DataFrame(data)
+        else:
+            return None
+
+    def extract2csv(self):
+        this_week_html_file = self.output_dir / f"this_week_raw_{self.timestamp}.html"
+        next_week_html_file = self.output_dir / f"next_week_raw_{self.timestamp}.html"
+
+        with open(this_week_html_file, 'r', encoding='utf-8') as f:
+            this_week_html_content = f.read()
+
+        with open(next_week_html_file, 'r', encoding='utf-8') as f:
+            next_week_html_content = f.read()
+
+        this_week_df = self.extract_economic_calendar(this_week_html_content)
+        next_week_df = self.extract_economic_calendar(next_week_html_content)
+
+        if this_week_df is not None:
+            csv_file_this_week = self.output_dir / f"investing_calendar_this_week_{self.timestamp}.csv"
+            this_week_df.to_csv(csv_file_this_week, index=False)
+            print(f"本周数据已保存到 {csv_file_this_week}")
+
+        if next_week_df is not None:
+            csv_file_next_week = self.output_dir / f"investing_calendar_next_week_{self.timestamp}.csv"
+            next_week_df.to_csv(csv_file_next_week, index=False)
+            print(f"下周数据已保存到 {csv_file_next_week}")
+
+        return this_week_df, next_week_df
 
 async def main():
     crawler = InvestingCalendarCrawler()
-    await crawler.run()
-    crawler.save_results()
+    success = await crawler.run()
+    if success:
+        crawler.save_results()
+        print("爬取数据保存成功")
+        crawler.extract2csv()
+        print('Done!')
+        return 0
+    else:
+        return 1
 
 
 if __name__ == "__main__":
