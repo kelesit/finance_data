@@ -1,0 +1,158 @@
+Date,Time,Country,Currency,Importance,Event,Event Link,Actual,Forecast,Previous
+2025-03-23,18:00,Australia,AUD,1,Judo Bank Manufacturing PMI  (Mar),/economic-calendar/manufacturing-pmi-1838,,,50.4
+2025-03-23,18:00,Australia,AUD,1,Judo Bank Services PMI  (Mar),/economic-calendar/services-pmi-1839,,,50.8
+2025-03-23,20:30,Japan,JPY,1,au Jibun Bank Manufacturing PMI  (Mar),/economic-calendar/manufacturing-pmi-202,,49.2,49.0
+2025-03-23,20:30,Japan,JPY,2,au Jibun Bank Services PMI  (Mar),/economic-calendar/services-pmi-1912,,,53.7
+2025-03-24,05:00,Euro Zone,EUR,2,HCOB Eurozone Manufacturing PMI  (Mar),/economic-calendar/manufacturing-pmi-201,,48.3,47.6
+2025-03-24,05:00,Euro Zone,EUR,2,HCOB Eurozone Composite PMI  (Mar),/economic-calendar/s-p-global-composite-pmi-1491,,,50.2
+2025-03-24,05:00,Euro Zone,EUR,2,HCOB Eurozone Services PMI  (Mar),/economic-calendar/services-pmi-272,,51.2,50.6
+2025-03-24,08:30,United States,USD,1,Chicago Fed National Activity  (Feb),/economic-calendar/chicago-fed-national-activity-523,,,-0.03
+2025-03-24,09:45,United States,USD,3,S&P Global Manufacturing PMI  (Mar),/economic-calendar/manufacturing-pmi-829,,51.9,52.7
+2025-03-24,09:45,United States,USD,2,S&P Global Composite PMI  (Mar),/economic-calendar/s-p-global-composite-pmi-1492,,,51.6
+2025-03-24,09:45,United States,USD,3,S&P Global Services PMI  (Mar),/economic-calendar/services-pmi-1062,,51.2,51.0
+2025-03-24,11:30,United States,USD,1,3-Month Bill Auction,/economic-calendar/3-month-bill-auction-568,,,4.205%
+2025-03-24,11:30,United States,USD,1,6-Month Bill Auction,/economic-calendar/6-month-bill-auction-679,,,4.100%
+2025-03-24,13:45,United States,USD,2,FOMC Member Bostic Speaks,/economic-calendar/fomc-member-bostic-speaks-1712,,,
+2025-03-24,15:10,United States,USD,2,Fed Vice Chair for Supervision Barr Speaks,/economic-calendar/fed-vice-chair-for-supervision-barr-speaks-2108,,,
+2025-03-24,19:10,Australia,AUD,1,RBA Assistant Governor Jones Speaks,/economic-calendar/rba-assistant-governor-jones-speaks-2138,,,
+2025-03-24,19:50,Japan,JPY,2,Monetary Policy Meeting Minutes,/economic-calendar/monetary-policy-meeting-minutes-210,,,
+2025-03-25,01:00,Japan,JPY,2,BoJ Core CPI (YoY),/economic-calendar/boj-core-cpi-1667,,,2.2%
+2025-03-25,08:00,United States,USD,2,Building Permits  (Feb),/economic-calendar/building-permits-25,,1.456M,1.473M
+2025-03-25,08:00,United States,USD,1,Building Permits (MoM)  (Feb),/economic-calendar/building-permits-885,,-1.2%,-0.6%
+2025-03-25,08:30,Canada,CAD,1,Manufacturing Sales (MoM)  (Feb),/economic-calendar/manufacturing-sales-207,,,1.7%
+2025-03-25,08:40,United States,USD,1,FOMC Member Kugler Speaks,/economic-calendar/fomc-member-kugler-speaks-2261,,,
+2025-03-25,08:55,United States,USD,1,Redbook (YoY),/economic-calendar/redbook-911,,,5.2%
+2025-03-25,09:00,United States,USD,1,House Price Index (YoY)  (Jan),/economic-calendar/house-price-index-897,,,4.7%
+2025-03-25,09:00,United States,USD,1,House Price Index (MoM)  (Jan),/economic-calendar/house-price-index-327,,,0.4%
+2025-03-25,09:00,United States,USD,1,House Price Index  (Jan),/economic-calendar/monthly-home-price-index-1287,,,436.1
+2025-03-25,09:00,United States,USD,1,S&P/CS HPI Composite - 20 s.a. (MoM)  (Jan),/economic-calendar/s-p-cs-hpi-composite---20-s.a.-1334,,,0.5%
+2025-03-25,09:00,United States,USD,2,S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Jan),/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-913,,0.2%,-0.1%
+2025-03-25,09:00,United States,USD,2,S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Jan),/economic-calendar/s-p-cs-hpi-composite-20-n.s.a.-329,,4.6%,4.5%
+2025-03-25,09:05,United States,USD,2,FOMC Member Williams Speaks,/economic-calendar/fomc-member-williams-speaks-1585,,,
+2025-03-25,10:00,United States,USD,3,CB Consumer Confidence  (Mar),/economic-calendar/cb-consumer-confidence-48,,94.2,98.3
+2025-03-25,10:00,United States,USD,2,New Home Sales (MoM)  (Feb),/economic-calendar/new-home-sales-896,,,-10.5%
+2025-03-25,10:00,United States,USD,3,New Home Sales  (Feb),/economic-calendar/new-home-sales-222,,682K,657K
+2025-03-25,10:00,United States,USD,1,Richmond Manufacturing Index  (Mar),/economic-calendar/richmond-manufacturing-index-263,,8,6
+2025-03-25,10:00,United States,USD,1,Richmond Manufacturing Shipments  (Mar),/economic-calendar/richmond-manufacturing-shipments-1510,,,12
+2025-03-25,10:00,United States,USD,1,Richmond Services Index  (Mar),/economic-calendar/richmond-services-index-1511,,,11
+2025-03-25,13:00,United States,USD,2,2-Year Note Auction,/economic-calendar/2-year-note-auction-569,,,4.169%
+2025-03-25,13:00,United States,USD,1,M2 Money Supply (MoM)  (Feb),/economic-calendar/us-m2-money-supply-1999,,,21.56T
+2025-03-25,14:35,United States,USD,2,FOMC Member Williams Speaks,/economic-calendar/fomc-member-williams-speaks-1585,,,
+2025-03-25,16:30,United States,USD,2,API Weekly Crude Oil Stock,/economic-calendar/api-weekly-crude-stock-656,,,4.593M
+2025-03-25,19:50,Japan,JPY,1,Corporate Services Price Index (CSPI) (YoY),/economic-calendar/cspi-76,,3.1%,3.1%
+2025-03-25,20:30,Australia,AUD,1,Monthly CPI Indicator (YoY)  (Feb),/economic-calendar/weighted-cpi-2215,,2.50%,2.50%
+2025-03-26,01:00,Japan,JPY,1,Coincident Indicator (MoM)  (Jan),/economic-calendar/coincident-indicator-1441,,0.1%,1.0%
+2025-03-26,01:00,Japan,JPY,1,Leading Index  (Jan),/economic-calendar/leading-index-191,,108.0,108.3
+2025-03-26,01:00,Japan,JPY,1,Leading Index (MoM)  (Jan),/economic-calendar/leading-index-1582,,0.1%,0.5%
+2025-03-26,04:00,Euro Zone,EUR,2,European Central Bank Non-monetary Policy Meeting,/economic-calendar/ecb-non-monetary-policy-meeting-2014,,,
+2025-03-26,07:00,United States,USD,1,MBA 30-Year Mortgage Rate,/economic-calendar/mba-30-year-mortgage-rate-1042,,,6.72%
+2025-03-26,07:00,United States,USD,1,MBA Mortgage Applications (WoW),/economic-calendar/mba-mortgage-applications-380,,,-6.2%
+2025-03-26,07:00,United States,USD,1,MBA Purchase Index,/economic-calendar/mba-purchase-index-1494,,,154.7
+2025-03-26,07:00,United States,USD,1,Mortgage Market Index,/economic-calendar/mortgage-market-index-1427,,,252.5
+2025-03-26,07:00,United States,USD,1,Mortgage Refinance Index,/economic-calendar/mortgage-refinance-index-1428,,,794.4
+2025-03-26,08:30,United States,USD,2,Core Durable Goods Orders (MoM)  (Feb),/economic-calendar/core-durable-goods-orders-59,,0.4%,0.0%
+2025-03-26,08:30,United States,USD,3,Durable Goods Orders (MoM)  (Feb),/economic-calendar/durable-goods-orders-86,,-0.6%,3.1%
+2025-03-26,08:30,United States,USD,1,Durables Excluding Defense (MoM)  (Feb),/economic-calendar/durables-excluding-defense-1446,,,3.5%
+2025-03-26,08:30,United States,USD,1,Goods Orders Non Defense Ex Air (MoM)  (Feb),/economic-calendar/goods-orders-non-defense-ex-air-1047,,,0.8%
+2025-03-26,08:30,Canada,CAD,2,Wholesale Sales (MoM)  (Feb),/economic-calendar/wholesale-sales-306,,,1.2%
+2025-03-26,09:30,United States,USD,3,Crude Oil Inventories,/economic-calendar/eia-crude-oil-inventories-75,,,1.745M
+2025-03-26,09:30,United States,USD,1,EIA Refinery Crude Runs  (WoW),/economic-calendar/eia-refinery-crude-runs-1960,,,-0.045M
+2025-03-26,09:30,United States,USD,1,Crude Oil Imports,/economic-calendar/eia-weekly-crude-imports-1658,,,-1.439M
+2025-03-26,09:30,United States,USD,2,Cushing Crude Oil Inventories,/economic-calendar/eia-weekly-cushing-oil-inventories-1657,,,-1.009M
+2025-03-26,09:30,United States,USD,1,Distillate Fuel Production,/economic-calendar/eia-weekly-distillate-fuel-production-1660,,,0.151M
+2025-03-26,09:30,United States,USD,1,EIA Weekly Distillates Stocks,/economic-calendar/eia-weekly-distillates-stocks-917,,,-2.812M
+2025-03-26,09:30,United States,USD,1,Gasoline Production,/economic-calendar/eia-weekly-gasoline-production-1661,,,0.067M
+2025-03-26,09:30,United States,USD,1,Heating Oil Stockpiles,/economic-calendar/eia-weekly-heatoil-stock-1659,,,0.008M
+2025-03-26,09:30,United States,USD,1,EIA Weekly Refinery Utilization Rates (WoW),/economic-calendar/eia-weekly-refinery-utilization-rates-1961,,,0.4%
+2025-03-26,09:30,United States,USD,1,Gasoline Inventories,/economic-calendar/gasoline-inventories-485,,,-0.527M
+2025-03-26,10:00,United States,USD,2,FOMC Member Kashkari Speaks,/economic-calendar/fomc-member-kashkari-speaks-1665,,,
+2025-03-26,11:30,United States,USD,2,Atlanta Fed GDPNow  (Q1),/economic-calendar/atlanta-fed-gdpnow-2260,,-1.8%,-1.8%
+2025-03-26,13:00,United States,USD,2,5-Year Note Auction,/economic-calendar/5-year-note-auction-570,,,4.123%
+2025-03-26,13:30,Canada,CAD,1,BOC Summary of Deliberations,/economic-calendar/boc-summary-of-deliberations-2143,,,
+2025-03-26,19:50,Japan,JPY,1,Foreign Bonds Buying,/economic-calendar/foreign-bonds-buying-987,,,-87.6B
+2025-03-26,19:50,Japan,JPY,1,Foreign Investments in Japanese Stocks,/economic-calendar/foreign-investments-in-japanese-stocks-1451,,,"-1,806.2B"
+2025-03-26,21:30,China,CNY,1,Chinese Industrial profit YTD  (Feb),/economic-calendar/chinese-industrial-profit-ytd-1917,,,-3.3%
+2025-03-27,05:00,Euro Zone,EUR,1,M3 Money Supply (YoY)  (Feb),/economic-calendar/m3-money-supply-198,,3.8%,3.6%
+2025-03-27,05:00,Euro Zone,EUR,1,M3 Money Supply  (Feb),/economic-calendar/m3-money-supply-2234,,,"16,754.9B"
+2025-03-27,05:00,Euro Zone,EUR,1,Loans to Non Financial Corporations  (Feb),/economic-calendar/non-financial-corporations-loans-1901,,,2.0%
+2025-03-27,05:00,Euro Zone,EUR,1,Private Sector Loans (YoY)  (Feb),/economic-calendar/private-loans-382,,1.4%,1.3%
+2025-03-27,06:00,Euro Zone,EUR,2,EU Economic Forecasts,/economic-calendar/eu-economic-forecasts-1696,,,
+2025-03-27,08:30,United States,USD,2,Continuing Jobless Claims,/economic-calendar/continuing-jobless-claims-522,,,"1,892K"
+2025-03-27,08:30,United States,USD,2,Core PCE Prices  (Q4),/economic-calendar/core-pce-prices-1548,,2.70%,2.20%
+2025-03-27,08:30,United States,USD,1,Corporate Profits (QoQ)  (Q4),/economic-calendar/corporate-profits-1315,,,-0.4%
+2025-03-27,08:30,United States,USD,3,GDP (QoQ)  (Q4),/economic-calendar/gdp-375,,2.3%,3.1%
+2025-03-27,08:30,United States,USD,2,GDP Price Index (QoQ)  (Q4),/economic-calendar/gdp-price-index-343,,2.4%,1.9%
+2025-03-27,08:30,United States,USD,1,GDP Sales  (Q4),/economic-calendar/gdp-sales-1468,,3.2%,3.3%
+2025-03-27,08:30,United States,USD,2,Goods Trade Balance  (Feb),/economic-calendar/goods-trade-balance-1650,,-134.60B,-153.26B
+2025-03-27,08:30,United States,USD,3,Initial Jobless Claims,/economic-calendar/initial-jobless-claims-294,,225K,223K
+2025-03-27,08:30,United States,USD,1,Jobless Claims 4-Week Avg.,/economic-calendar/jobless-claims-4-week-avg.-1041,,,227.00K
+2025-03-27,08:30,United States,USD,1,PCE Prices  (Q4),/economic-calendar/pce-prices-1571,,2.4%,1.5%
+2025-03-27,08:30,United States,USD,1,Real Consumer Spending  (Q4),/economic-calendar/real-consumer-spending-914,,4.2%,3.7%
+2025-03-27,08:30,United States,USD,2,Retail Inventories Ex Auto  (Feb),/economic-calendar/retail-inventories-ex-auto-1887,,,0.5%
+2025-03-27,08:30,United States,USD,1,Wholesale Inventories (MoM)  (Feb),/economic-calendar/wholesale-inventories-305,,0.4%,0.8%
+2025-03-27,08:30,Canada,CAD,1,Average Weekly Earnings (YoY)  (Jan),/economic-calendar/average-weekly-earnings-2219,,,5.81%
+2025-03-27,09:00,Euro Zone,EUR,2,ECB's De Guindos Speaks,/economic-calendar/ecb's-de-guindos-speaks-1790,,,
+2025-03-27,10:00,United States,USD,2,Pending Home Sales (MoM)  (Feb),/economic-calendar/pending-home-sales-232,,,-4.6%
+2025-03-27,10:00,United States,USD,1,Pending Home Sales Index  (Feb),/economic-calendar/pending-home-sales-index-902,,,70.6
+2025-03-27,10:30,United States,USD,1,Natural Gas Storage,/economic-calendar/natural-gas-storage-386,,,9B
+2025-03-27,11:00,United States,USD,1,KC Fed Composite Index  (Mar),/economic-calendar/kc-fed-composite-index-662,,,-5
+2025-03-27,11:00,United States,USD,1,KC Fed Manufacturing Index  (Mar),/economic-calendar/kc-fed-manufacturing-index-899,,,-13
+2025-03-27,11:30,United States,USD,1,4-Week Bill Auction,/economic-calendar/4-week-bill-auction-567,,,4.215%
+2025-03-27,11:30,United States,USD,1,8-Week Bill Auction,/economic-calendar/8-week-bill-auction-1801,,,4.215%
+2025-03-27,13:00,United States,USD,2,7-Year Note Auction,/economic-calendar/7-year-note-auction-682,,,4.194%
+2025-03-27,13:40,Euro Zone,EUR,2,ECB's Schnabel Speaks,/economic-calendar/ecb's-schnabel-speaks-1982,,,
+2025-03-27,14:05,Euro Zone,EUR,2,ECB President Lagarde Speaks,/economic-calendar/ecb-president-lagarde-speaks-1965,,,
+2025-03-27,16:30,United States,USD,2,Fed's Balance Sheet,/economic-calendar/fed's-balance-sheet-2145,,,"6,756B"
+2025-03-27,16:30,United States,USD,1,FOMC Member Barkin Speaks,/economic-calendar/fomc-member-barkin-speaks-1775,,,
+2025-03-27,16:30,United States,USD,1,Reserve Balances with Federal Reserve Banks,/economic-calendar/reserve-balances-with-federal-reserve-banks-2120,,,3.425T
+2025-03-27,19:30,Japan,JPY,1,CPI Tokyo Ex Food & Energy (YoY)  (Mar),/economic-calendar/cpi-less-food-and-energy-2198,,,0.9%
+2025-03-27,19:30,Japan,JPY,2,Tokyo Core CPI (YoY)  (Mar),/economic-calendar/tokyo-core-cpi-328,,2.2%,2.2%
+2025-03-27,19:30,Japan,JPY,1,Tokyo CPI (YoY)  (Mar),/economic-calendar/tokyo-cpi-993,,,2.9%
+2025-03-27,19:30,Japan,JPY,1,CPI Tokyo Ex Food and Energy (MoM)  (Mar),/economic-calendar/tokyo-cpi-ex-food-and-energy-1908,,,0.2%
+2025-03-27,19:50,Japan,JPY,1,BoJ Summary of Opinions,/economic-calendar/boj-summary-of-opinions-1757,,,
+2025-03-28,04:30,Euro Zone,EUR,2,ECB's De Guindos Speaks,/economic-calendar/ecb's-de-guindos-speaks-1790,,,
+2025-03-28,06:00,Euro Zone,EUR,1,Business and Consumer Survey  (Mar),/economic-calendar/business-and-consumer-survey-534,,97.0,96.3
+2025-03-28,06:00,Euro Zone,EUR,1,Business Climate  (Mar),/economic-calendar/business-climate-918,,,-0.74
+2025-03-28,06:00,Euro Zone,EUR,1,Consumer Confidence  (Mar),/economic-calendar/consumer-confidence-49,,-14.5,-13.6
+2025-03-28,06:00,Euro Zone,EUR,1,Consumer Inflation Expectation  (Mar),/economic-calendar/consumer-inflation-expectation-920,,,21.1
+2025-03-28,06:00,Euro Zone,EUR,1,Selling Price Expectations  (Mar),/economic-calendar/european-selling-price-expectations-1572,,,9.8
+2025-03-28,06:00,Euro Zone,EUR,1,Services Sentiment  (Mar),/economic-calendar/european-services-sentiment-1418,,6.7,6.2
+2025-03-28,06:00,Euro Zone,EUR,1,Industrial Sentiment  (Mar),/economic-calendar/industrial-sentiment-919,,-10.5,-11.4
+2025-03-28,08:30,United States,USD,3,Core PCE Price Index (YoY)  (Feb),/economic-calendar/core-pce-price-index-905,,,2.6%
+2025-03-28,08:30,United States,USD,3,Core PCE Price Index (MoM)  (Feb),/economic-calendar/core-pce-price-index-61,,0.3%,0.3%
+2025-03-28,08:30,United States,USD,2,PCE Price index (YoY)  (Feb),/economic-calendar/pce-price-index-906,,,2.5%
+2025-03-28,08:30,United States,USD,2,PCE price index (MoM)  (Feb),/economic-calendar/pce-price-index-904,,0.3%,0.3%
+2025-03-28,08:30,United States,USD,1,Personal Income (MoM)  (Feb),/economic-calendar/personal-income-234,,0.4%,0.9%
+2025-03-28,08:30,United States,USD,2,Personal Spending (MoM)  (Feb),/economic-calendar/personal-spending-235,,0.6%,-0.2%
+2025-03-28,08:30,United States,USD,1,Real Personal Consumption (MoM)  (Feb),/economic-calendar/real-personal-consumption-895,,,-0.5%
+2025-03-28,08:30,Canada,CAD,2,GDP (MoM)  (Jan),/economic-calendar/gdp-123,,0.2%,0.2%
+2025-03-28,08:31,Canada,CAD,2,GDP (MoM)  (Feb),/economic-calendar/gdp-123,,,0.2%
+2025-03-28,09:00,United States,USD,1,Dallas Fed PCE  (Feb),/economic-calendar/dallas-fed-pce-1550,,,2.50%
+2025-03-28,10:00,United States,USD,2,Michigan 1-Year Inflation Expectations  (Mar),/economic-calendar/michigan-1-year-inflation-expectations-389,,4.9%,4.3%
+2025-03-28,10:00,United States,USD,2,Michigan 5-Year Inflation Expectations  (Mar),/economic-calendar/michigan-5-year-inflation-expectations-1568,,3.9%,3.5%
+2025-03-28,10:00,United States,USD,2,Michigan Consumer Expectations  (Mar),/economic-calendar/michigan-consumer-expectations-900,,54.2,64.0
+2025-03-28,10:00,United States,USD,2,Michigan Consumer Sentiment  (Mar),/economic-calendar/michigan-consumer-sentiment-320,,57.9,64.7
+2025-03-28,10:00,United States,USD,1,Michigan Current Conditions  (Mar),/economic-calendar/michigan-current-conditions-901,,63.5,65.7
+2025-03-28,11:00,Canada,CAD,1,Budget Balance  (Jan),/economic-calendar/budget-balance-669,,,1.00B
+2025-03-28,11:00,Canada,CAD,1,Budget Balance (YoY)  (Jan),/economic-calendar/budget-balance-1073,,,-21.72B
+2025-03-28,11:30,United States,USD,2,Atlanta Fed GDPNow  (Q1),/economic-calendar/atlanta-fed-gdpnow-2260,,,
+2025-03-28,12:15,United States,USD,2,Fed Vice Chair for Supervision Barr Speaks,/economic-calendar/fed-vice-chair-for-supervision-barr-speaks-2108,,,
+2025-03-28,13:00,United States,USD,2,U.S. Baker Hughes Oil Rig Count,/economic-calendar/baker-hughes-u.s.-rig-count-1652,,,486
+2025-03-28,13:00,United States,USD,2,U.S. Baker Hughes Total Rig Count,/economic-calendar/u.s.-baker-hughes-total-rig-count-1810,,,593
+2025-03-28,15:30,United States,USD,1,CFTC Aluminium speculative net positions,/economic-calendar/cftc-aluminium-speculative-net-positions-1821,,,1.9K
+2025-03-28,15:30,United States,USD,1,CFTC Copper speculative net positions,/economic-calendar/cftc-copper-speculative-positions-1620,,,25.2K
+2025-03-28,15:30,United States,USD,1,CFTC Corn speculative net positions,/economic-calendar/cftc-corn-speculative-positions-1813,,,239.4K
+2025-03-28,15:30,United States,USD,2,CFTC Crude Oil speculative net positions,/economic-calendar/cftc-crude-oil-speculative-positions-1653,,,166.8K
+2025-03-28,15:30,United States,USD,2,CFTC Nasdaq 100 speculative net positions,/economic-calendar/cftc-nasdaq-100-speculative-positions-1959,,,23.0K
+2025-03-28,15:30,United States,USD,1,CFTC Natural Gas speculative net positions,/economic-calendar/cftc-natural-gas-speculative-positions-1820,,,-123.0K
+2025-03-28,15:30,United States,USD,2,CFTC S&P 500 speculative net positions,/economic-calendar/cftc-s-p-500-speculative-positions-1619,,,68.3K
+2025-03-28,15:30,United States,USD,1,CFTC Silver speculative net positions,/economic-calendar/cftc-silver-speculative-positions-1621,,,62.3K
+2025-03-28,15:30,United States,USD,1,CFTC Soybeans speculative net positions,/economic-calendar/cftc-soybeans-speculative-positions-1811,,,-8.3K
+2025-03-28,15:30,United States,USD,1,CFTC Wheat speculative net positions,/economic-calendar/cftc-wheat-speculative-positions-1812,,,-76.5K
+2025-03-28,15:30,Canada,CAD,1,CFTC CAD speculative net positions,/economic-calendar/cftc-cad-speculative-positions-1613,,,-136.6K
+2025-03-28,15:30,Australia,AUD,2,CFTC AUD speculative net positions,/economic-calendar/cftc-aud-speculative-positions-1615,,,-70.4K
+2025-03-28,15:30,Japan,JPY,2,CFTC JPY speculative net positions,/economic-calendar/cftc-jpy-speculative-positions-1614,,,123.0K
+2025-03-28,15:30,Euro Zone,EUR,2,CFTC EUR speculative net positions,/economic-calendar/cftc-eur-speculative-positions-1611,,,59.4K
+2025-03-28,15:45,United States,USD,2,FOMC Member Bostic Speaks,/economic-calendar/fomc-member-bostic-speaks-1712,,,
+2025-03-28,16:30,United States,USD,2,CFTC Gold speculative net positions,/economic-calendar/cftc-gold-speculative-positions-1618,,,257.9K
+2025-03-28,19:50,Japan,JPY,1,Large Retailers' Sales (MoM)  (Feb),/economic-calendar/large-retailers'-sales-190,,,0.5%

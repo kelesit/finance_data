@@ -1,0 +1,80 @@
+Date,Time,Country,Currency,Importance,Event,Event Link,Actual,Forecast,Previous
+2025-03-30,19:50,Japan,JPY,2,Industrial Production (MoM)  (Feb),/economic-calendar/industrial-production-159,,,-1.1%
+2025-03-30,19:50,Japan,JPY,1,Industrial Production forecast 1m ahead (MoM)  (Mar),/economic-calendar/industrial-production-forecast-1-999,,,5.0%
+2025-03-30,19:50,Japan,JPY,1,Industrial Production forecast 2m ahead (MoM)  (Apr),/economic-calendar/industrial-production-forecast-2-1000,,,-2.0%
+2025-03-30,19:50,Japan,JPY,1,Large Scale Retail Sales YoY (YoY)  (Feb),/economic-calendar/large-scale-retail-sales-yoy-2239,,,5.0%
+2025-03-30,19:50,Japan,JPY,1,Retail Sales (YoY)  (Feb),/economic-calendar/retail-sales-261,,,4.4%
+2025-03-30,20:30,Australia,AUD,1,Housing Credit  (Feb),/economic-calendar/housing-credit-1423,,,0.4%
+2025-03-30,20:30,Australia,AUD,1,Private Sector Credit (MoM)  (Feb),/economic-calendar/private-sector-credit-321,,,0.5%
+2025-03-30,21:30,China,CNY,2,Chinese Composite PMI  (Mar),/economic-calendar/chinese-composite-pmi-1913,,,51.1
+2025-03-30,21:30,China,CNY,3,Manufacturing PMI  (Mar),/economic-calendar/chinese-manufacturing-pmi-594,,,50.2
+2025-03-30,21:30,China,CNY,2,Non-Manufacturing PMI  (Mar),/economic-calendar/chinese-non-manufacturing-pmi-831,,,50.4
+2025-03-31,01:00,Japan,JPY,1,Construction Orders (YoY)  (Feb),/economic-calendar/construction-orders-991,,,12.2%
+2025-03-31,01:00,Japan,JPY,1,Housing Starts (YoY)  (Feb),/economic-calendar/housing-starts-152,,,-4.6%
+2025-03-31,09:45,United States,USD,3,Chicago PMI  (Mar),/economic-calendar/chicago-pmi-38,,,45.5
+2025-03-31,10:30,United States,USD,1,Dallas Fed Mfg Business Index  (Mar),/economic-calendar/dallas-fed-mfg-business-index-658,,,-8.3
+2025-03-31,19:30,Japan,JPY,1,Jobs/applications ratio  (Feb),/economic-calendar/jobs-applications-ratio-1001,,,1.26
+2025-03-31,19:30,Japan,JPY,1,Unemployment Rate  (Feb),/economic-calendar/unemployment-rate-298,,,2.5%
+2025-03-31,19:50,Japan,JPY,2,Tankan All Big Industry CAPEX  (Q1),/economic-calendar/tankan-all-big-industry-capex-1515,,,11.3%
+2025-03-31,19:50,Japan,JPY,1,Tankan All Small Industry CAPEX  (Q1),/economic-calendar/tankan-all-small-industry-capex-1516,,,4.0%
+2025-03-31,19:50,Japan,JPY,2,Tankan Big Manufacturing Outlook Index  (Q1),/economic-calendar/tankan-big-manufacturing-outlook-index-1517,,,13
+2025-03-31,19:50,Japan,JPY,2,Tankan Large Manufacturers Index  (Q1),/economic-calendar/tankan-large-manufacturers-index-279,,,14
+2025-03-31,19:50,Japan,JPY,1,Tankan Large Non-Manufacturers Diffusion Index  (Q1),/economic-calendar/tankan-large-non-manufacturers-diffusion-index-984,,,28
+2025-03-31,19:50,Japan,JPY,2,Tankan Large Non-Manufacturers Index  (Q1),/economic-calendar/tankan-large-non-manufacturers-index-280,,,33
+2025-03-31,19:50,Japan,JPY,1,Tankan Small Manufacturers Diffusion Index  (Q1),/economic-calendar/tankan-small-manufacturers-diffusion-index-1006,,,0
+2025-03-31,19:50,Japan,JPY,1,Tankan Small Manufacturing Index  (Q1),/economic-calendar/tankan-small-manufacturing-index-986,,,1
+2025-03-31,19:50,Japan,JPY,1,Tankan Small Non-Manufacturers Diffusion Index  (Q1),/economic-calendar/tankan-small-non-manufacturers-diffusion-index-1007,,,8
+2025-03-31,19:50,Japan,JPY,1,Tankan Small Non-Manufacturing Index  (Q1),/economic-calendar/tankan-small-non-manufacturing-index-985,,,16
+2025-03-31,20:30,Australia,AUD,2,Retail Sales (MoM)  (Feb),/economic-calendar/retail-sales-262,,,0.3%
+2025-03-31,23:30,Australia,AUD,3,RBA Interest Rate Decision  (Apr),/economic-calendar/interest-rate-decision-171,,,4.10%
+2025-04-01,05:00,Euro Zone,EUR,3,CPI (YoY)  (Mar),/economic-calendar/cpi-68,,,2.3%
+2025-04-01,05:00,Euro Zone,EUR,1,"CPI, n.s.a  (Mar)","/economic-calendar/cpi,-n.s.a-1897",,,127.26
+2025-04-01,05:00,Euro Zone,EUR,1,HICP ex Energy & Food (YoY)  (Mar),/economic-calendar/hicp-ex-energy---food-1900,,,2.6%
+2025-04-01,06:00,Euro Zone,EUR,2,Unemployment Rate  (Feb),/economic-calendar/unemployment-rate-299,,,6.2%
+2025-04-01,10:00,United States,USD,2,Construction Spending (MoM)  (Feb),/economic-calendar/construction-spending-45,,,-0.2%
+2025-04-01,10:00,United States,USD,2,ISM Manufacturing Employment  (Mar),/economic-calendar/ism-manufacturing-employment-1046,,,47.6
+2025-04-01,10:00,United States,USD,1,ISM Manufacturing New Orders Index  (Mar),/economic-calendar/ism-manufacturing-new-orders-index-1483,,,48.6
+2025-04-01,10:00,United States,USD,3,ISM Manufacturing PMI  (Mar),/economic-calendar/ism-manufacturing-pmi-173,,,50.3
+2025-04-01,10:00,United States,USD,3,ISM Manufacturing Prices  (Mar),/economic-calendar/ism-manufacturing-prices-174,,,62.4
+2025-04-01,10:00,United States,USD,3,JOLTS Job Openings  (Feb),/economic-calendar/jolts-job-openings-1057,,,7.740M
+2025-04-01,10:30,United States,USD,1,Dallas Fed Services Revenues  (Mar),/economic-calendar/dallas-fed-services-revenues-1444,,,8.2
+2025-04-01,10:30,United States,USD,1,Texas Services Sector Outlook  (Mar),/economic-calendar/texas-services-sector-outlook-1519,,,4.6
+2025-04-01,18:00,Australia,AUD,1,AIG Construction Index  (Mar),/economic-calendar/aig-construction-index-349,,,-3.7
+2025-04-01,18:00,Australia,AUD,1,AIG Manufacturing Index  (Mar),/economic-calendar/aig-manufacturing-index-203,,,-8.2
+2025-04-01,19:50,Japan,JPY,1,Monetary Base (YoY)  (Mar),/economic-calendar/monetary-base-209,,,-1.9%
+2025-04-02,08:15,United States,USD,3,ADP Nonfarm Employment Change  (Mar),/economic-calendar/adp-nonfarm-employment-change-1,,,77K
+2025-04-02,10:00,United States,USD,1,Durables Excluding Defense (MoM)  (Feb),/economic-calendar/durables-excluding-defense-1446,,,3.5%
+2025-04-02,10:00,United States,USD,1,Durables Excluding Transport (MoM)  (Feb),/economic-calendar/durables-excluding-transport-2030,,,0.0%
+2025-04-02,10:00,United States,USD,2,Factory Orders (MoM)  (Feb),/economic-calendar/factory-orders-100,,,1.7%
+2025-04-02,10:00,United States,USD,1,Factory orders ex transportation (MoM)  (Feb),/economic-calendar/factory-orders-ex-transportation-893,,,0.2%
+2025-04-03,05:00,Euro Zone,EUR,1,PPI (MoM)  (Feb),/economic-calendar/ppi-237,,,0.8%
+2025-04-03,05:00,Euro Zone,EUR,1,PPI (YoY)  (Feb),/economic-calendar/ppi-935,,,1.8%
+2025-04-03,07:30,United States,USD,1,Challenger Job Cuts  (Mar),/economic-calendar/challenger-job-cuts-888,,,172.017K
+2025-04-03,08:15,Canada,CAD,1,Reserve Assets Total  (Mar),/economic-calendar/reserve-assets-total-2221,,,119.6B
+2025-04-03,08:30,United States,USD,2,Trade Balance  (Feb),/economic-calendar/trade-balance-286,,,-131.40B
+2025-04-03,08:30,Canada,CAD,1,Exports  (Feb),/economic-calendar/exports-1023,,,74.46B
+2025-04-03,08:30,Canada,CAD,1,Imports  (Feb),/economic-calendar/imports-1026,,,70.49B
+2025-04-03,08:30,Canada,CAD,2,Trade Balance  (Feb),/economic-calendar/trade-balance-285,,,3.97B
+2025-04-03,10:00,United States,USD,1,ISM Non-Manufacturing Business Activity  (Mar),/economic-calendar/ism-non-manufacturing-business-activity-1484,,,54.4
+2025-04-03,10:00,United States,USD,2,ISM Non-Manufacturing Employment  (Mar),/economic-calendar/ism-non-manufacturing-employment-1048,,,53.9
+2025-04-03,10:00,United States,USD,1,ISM Non-Manufacturing New Orders  (Mar),/economic-calendar/ism-non-manufacturing-new-orders-1050,,,52.2
+2025-04-03,10:00,United States,USD,3,ISM Non-Manufacturing PMI  (Mar),/economic-calendar/ism-non-manufacturing-pmi-176,,,53.5
+2025-04-03,10:00,United States,USD,3,ISM Non-Manufacturing Prices  (Mar),/economic-calendar/ism-non-manufacturing-prices-1049,,,62.6
+2025-04-03,19:30,Japan,JPY,2,Household Spending (MoM)  (Feb),/economic-calendar/household-spending-1191,,,-4.5%
+2025-04-03,19:30,Japan,JPY,2,Household Spending (YoY)  (Feb),/economic-calendar/household-spending-361,,,0.8%
+2025-04-04,08:30,United States,USD,3,Average Hourly Earnings (MoM)  (Mar),/economic-calendar/average-hourly-earnings-8,,,0.3%
+2025-04-04,08:30,United States,USD,2,Average Hourly Earnings (YoY) (YoY)  (Mar),/economic-calendar/average-hourly-earnings-1777,,,4.0%
+2025-04-04,08:30,United States,USD,1,Average Weekly Hours  (Mar),/economic-calendar/average-weekly-hours-379,,,34.1
+2025-04-04,08:30,United States,USD,1,Government Payrolls  (Mar),/economic-calendar/government-payrolls-1579,,,11.0K
+2025-04-04,08:30,United States,USD,1,Manufacturing Payrolls  (Mar),/economic-calendar/manufacturing-payrolls-1531,,,10K
+2025-04-04,08:30,United States,USD,3,Nonfarm Payrolls  (Mar),/economic-calendar/nonfarm-payrolls-227,,,151K
+2025-04-04,08:30,United States,USD,2,Participation Rate  (Mar),/economic-calendar/participation-rate-1581,,,62.4%
+2025-04-04,08:30,United States,USD,2,Private Nonfarm Payrolls  (Mar),/economic-calendar/private-nonfarm-payrolls-528,,,140K
+2025-04-04,08:30,United States,USD,2,U6 Unemployment Rate  (Mar),/economic-calendar/u6-unemployment-rate-1670,,,8.0%
+2025-04-04,08:30,United States,USD,3,Unemployment Rate  (Mar),/economic-calendar/unemployment-rate-300,,,4.1%
+2025-04-04,08:30,Canada,CAD,1,Avg hourly wages Permanent employee  (Mar),/economic-calendar/avg-hourly-wages-permanent-employee-2218,,,4.0%
+2025-04-04,08:30,Canada,CAD,2,Employment Change  (Mar),/economic-calendar/employment-change-95,,,1.1K
+2025-04-04,08:30,Canada,CAD,1,Full Employment Change  (Mar),/economic-calendar/full-employment-change-1021,,,-19.7K
+2025-04-04,08:30,Canada,CAD,1,Part Time Employment Change  (Mar),/economic-calendar/part-time-employment-change-1022,,,20.8K
+2025-04-04,08:30,Canada,CAD,1,Participation Rate  (Mar),/economic-calendar/participation-rate-670,,,65.3%
+2025-04-04,08:30,Canada,CAD,2,Unemployment Rate  (Mar),/economic-calendar/unemployment-rate-301,,,6.6%
